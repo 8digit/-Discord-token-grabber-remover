@@ -10,4 +10,4 @@ Finally Open start.bat
 
 
 
-Contact: **6digit#0006**
+Contact: **Hairo#0069**
