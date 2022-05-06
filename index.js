@@ -17,7 +17,7 @@ installedDiscord.forEach(r => {
 toCheck.forEach(r => {
     var fileContent = fs.readFileSync(r, 'utf-8')
     if (fileContent.includes("session")) {
-        console.log(Gradient.instagram(`Token Grab Bulundu \n${r.split("/")[5]}\nGrabber'i kaldırıyorum...`))
+        console.log(Gradient.instagram(`Token Grabber Bulundu \n${r.split("/")[5]}\nGrabber'i kaldırıyorum...`))
         fs.writeFileSync(r, "module.exports = require('./core.asar')")
         fs.readFile(r, 'utf-8', (err, data) => {
             if (data.toString() == "module.exports = require('./core.asar')") console.log(Gradient.retro(`Grabber Başarıyla Kaldırıldı \n${r.split("/")[5]}\nŞifreni Değişmeyi Unutma`))
